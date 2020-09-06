@@ -22,9 +22,11 @@ def ReturnFunc():
 
 val = random.choice(friends)
 #stringVal = ReturnFunc()
+
+#using the random fuction to select a random item from the list friends
 print(random.choice(friends))
 #print (stringVal)
 
-value = 'ammar is a cunt'
+value = 'ammar is a Professional Developer'
 print (value.title())
 
