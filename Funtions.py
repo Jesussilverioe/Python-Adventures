@@ -16,14 +16,15 @@ def somefunc():
     print ("This is a Function!!!!")
 
 somefunc()
-cunts = ['edwin', 'ammar', 'jesus']
+friends = ['edwin', 'ammar', 'jesus']
 def ReturnFunc():
     return "This is return by a function."
 
-val = random.choice(cunts)
+val = random.choice(friends)
 #stringVal = ReturnFunc()
-print(random.choice(cunts))
+print(random.choice(friends))
 #print (stringVal)
 
 value = 'ammar is a cunt'
 print (value.title())
+
