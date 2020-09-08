@@ -20,6 +20,10 @@ friends = ['edwin', 'ammar', 'jesus']
 def ReturnFunc():
     return "This is return by a function."
 
+def keyValFunc(arg1, arg2):
+    print(f' This is argument one: {arg1}\n This is argument two: {arg2}.')
+
+
 val = random.choice(friends)
 #stringVal = ReturnFunc()
 
@@ -30,3 +34,7 @@ print(random.choice(friends))
 value = 'ammar is a Professional Developer'
 print (value.title())
 
+# In python we can also call the function with a keyword which specifies the values for the arguments
+# NOTE: the arguments have to match the names of the parameters in the function definition
+
+keyValFunc(arg1 = "Hello", arg2 = "World!")
