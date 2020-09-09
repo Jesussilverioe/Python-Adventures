@@ -20,8 +20,9 @@ friends = ['edwin', 'ammar', 'jesus']
 def ReturnFunc():
     return "This is return by a function."
 
-def keyValFunc(arg1, arg2):
-    print(f' This is argument one: {arg1}\n This is argument two: {arg2}.')
+# When setting default values, the default values go at the end of the parameters
+def keyValFunc(arg1 = '', arg2 =''):
+    print(f' This is argument one: {arg1}\n This is argument two: {arg2}')
 
 
 val = random.choice(friends)
@@ -36,5 +37,18 @@ print (value.title())
 
 # In python we can also call the function with a keyword which specifies the values for the arguments
 # NOTE: the arguments have to match the names of the parameters in the function definition
+# If the function has default values the function can be called without argumentrs
 
-keyValFunc(arg1 = "Hello", arg2 = "World!")
+keyValFunc()
+
+# Return a value function. Functions can return values that can be collected 
+# from where the function was called
+def get_formatted_name(first_name, last_name, middle_name = ''):
+        if middle_name:
+            full_name = f'{first_name} {middle_name} {last_name}'
+        else:
+            full_name = f'{first_name} {last_name}'
+            
+        return full_name.title()
+name = get_formatted_name('alice', 'maurice', 'parker')
+print(name)
