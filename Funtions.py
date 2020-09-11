@@ -50,5 +50,7 @@ def get_formatted_name(first_name, last_name, middle_name = ''):
             full_name = f'{first_name} {last_name}'
             
         return full_name.title()
+
+# In this function call the last parameter is optional. if not passed, the parameter would have a default value.
 name = get_formatted_name('alice', 'maurice', 'parker')
 print(name)
