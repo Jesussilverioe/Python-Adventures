@@ -67,9 +67,12 @@ def getStudents(stu):
 getStudents(students)
 
 # Creating a function that returns a dictionary
-def MakePerson(first_name, last_name):
+def MakePerson(first_name, last_name, ageVal = None):
     person = {'first': first_name, 'last': last_name}
+    if ageVal:
+        person['age'] = ageVal
+
     return person
 
-person = MakePerson('patricia', 'queen')
+person = MakePerson('patricia', 'queen', 36)
 print(person)
