@@ -43,6 +43,8 @@ keyValFunc()
 
 # Return a value function. Functions can return values that can be collected 
 # from where the function was called
+
+# Functions can return any data type
 def get_formatted_name(first_name, last_name, middle_name = ''):
         if middle_name:
             full_name = f'{first_name} {middle_name} {last_name}'
@@ -54,3 +56,20 @@ def get_formatted_name(first_name, last_name, middle_name = ''):
 # In this function call the last parameter is optional. if not passed, the parameter would have a default value.
 name = get_formatted_name('alice', 'maurice', 'parker')
 print(name)
+
+students = {'jhon', 'michael', 'peter'}
+
+def getStudents(stu):
+    print('The students are: ')
+    for students in stu:
+        print(students)
+
+getStudents(students)
+
+# Creating a function that returns a dictionary
+def MakePerson(first_name, last_name):
+    person = {'first': first_name, 'last': last_name}
+    return person
+
+person = MakePerson('patricia', 'queen')
+print(person)
