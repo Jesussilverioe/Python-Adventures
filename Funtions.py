@@ -87,13 +87,20 @@ def print_models(unprinted_model, completed_model):
         current_model = unprinted_model.pop()
         print(f'currently working on the model: {current_model}')
         completed_model.append(current_model)
+    
+    return completed_model
 
 
 models = ['phone screen', 'microphone', 'light sensor']
 model = []
-print_models(models, model)
+final_project = print_models(models, model)
 
+print('\n')
 
+print(f'Final parts: ')
+
+for parts in final_project:
+    print (f'+{parts}')
 
     
 
