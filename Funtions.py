@@ -77,8 +77,30 @@ def MakePerson(first_name, last_name, ageVal = None):
 person = MakePerson('patricia', 'queen', 36)
 print(person)
 
+print('\n')
+
+# We can also pass a list to a function which would not modify the list that we
+# are passing.
+
+def print_models(unprinted_model, completed_model):
+    while unprinted_model:
+        current_model = unprinted_model.pop()
+        print(f'currently working on the model: {current_model}')
+        completed_model.append(current_model)
+
+
+models = ['phone screen', 'microphone', 'light sensor']
+model = []
+print_models(models, model)
+
+
+
+    
+
+
+
 # We can use a for loop in a fuction in order to make some desire output
-print('/n')
+print('\n')
 
 # In this function we are passing an arbitrary number of items 
 # We can do this by saying the argument as a *argument which would create a touple in the function
@@ -89,4 +111,3 @@ def make_album(*args):
      print (f'- {arg}')
 
 make_album('madona','jackson five','adele')
-
