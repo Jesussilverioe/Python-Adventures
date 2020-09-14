@@ -41,7 +41,8 @@ print (value.title())
 
 keyValFunc()
 
-
+# Return a value function. Functions can return values that can be collected 
+# from where the function was called
 
 # Functions can return any data type
 def get_formatted_name(first_name, last_name, middle_name = ''):
