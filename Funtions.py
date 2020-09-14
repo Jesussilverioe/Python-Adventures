@@ -76,3 +76,17 @@ def MakePerson(first_name, last_name, ageVal = None):
 
 person = MakePerson('patricia', 'queen', 36)
 print(person)
+
+# We can use a for loop in a fuction in order to make some desire output
+print('/n')
+
+# In this function we are passing an arbitrary number of items 
+# We can do this by saying the argument as a *argument which would create a touple in the function
+def make_album(*args):
+
+    print('list of albums: ')
+    for arg in args:
+     print (f'- {arg}')
+
+make_album('madona','jackson five','adele')
+
