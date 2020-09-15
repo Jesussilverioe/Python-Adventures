@@ -81,6 +81,9 @@ print('\n')
 
 # We can also pass a list to a function which would not modify the list that we
 # are passing.
+# This function also returns a list of parts
+# NOTE: when passing a list in a fuction, the function has access to the origianl list
+# This can be avoided by passing a copy of the list when defining e.g def print_models(unprinted_model[:], completed_model):
 
 def print_models(unprinted_model, completed_model):
     while unprinted_model:
@@ -103,9 +106,6 @@ for parts in final_project:
     print (f'+{parts}')
 
     
-
-
-
 # We can use a for loop in a fuction in order to make some desire output
 print('\n')
 
@@ -118,3 +118,14 @@ def make_album(*args):
      print (f'- {arg}')
 
 make_album('madona','jackson five','adele')
+
+# In a function we can specify some arguments that are fixed and some arbitrary arguments
+# In this example the variable siza used as a positional keywork whereas to the variable *args we can pass an arbitrary
+# number of items
+
+def making_pizza(size, *args):
+    print(f'Pizza of {size}-inch make with the following toppings:')
+    for arg in args:
+        print(f'-{arg}')
+
+making_pizza(6, 'pepperoni', 'ham')
