@@ -129,3 +129,15 @@ def making_pizza(size, *args):
         print(f'-{arg}')
 
 making_pizza(6, 'pepperoni', 'ham')
+
+# We can also past a key value part (Dictionary) to a function in oder to work with such information
+
+def make_character(firstn, lastn, **character_info):
+    character_info ['first name'] = firstn
+    character_info ['last name'] = lastn
+
+    return character_info 
+
+character_details = make_character('Kevin', 'Jhonson', Location = 'Austin', Course = 'CS')
+
+print(f'character info: {character_details}')
